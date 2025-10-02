@@ -34,7 +34,7 @@ export default function Header() {
         <div className="md:hidden flex items-center justify-center h-16 relative">
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#home')}>
             <img 
-              src="/src/assets/images/LOGO.jpg"
+                    src="/images/LOGO.jpg"
               alt="Nizami Parda & Foam Center Logo"
               className="w-20 h-20 rounded-lg object-cover border border-white/20"
             />
@@ -57,7 +57,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#home')}>
             <img 
-              src="/src/assets/images/LOGO.jpg"
+                    src="/images/LOGO.jpg"
               alt="Nizami Parda & Foam Center Logo"
               className="w-20 h-20 rounded-lg object-cover border border-white/20"
             />

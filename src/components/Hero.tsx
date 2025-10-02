@@ -83,7 +83,7 @@ export default function Hero() {
                 className="relative"
               >
                 <img
-                  src="/src/assets/images/LOGO.jpg"
+                  src="/images/LOGO.jpg"
                   alt="Nizami Parda & Foam Center Logo"
                   className="w-54 h-54 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-3xl object-cover border-4 border-white/30 shadow-2xl"
                 />

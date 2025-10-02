@@ -7,28 +7,28 @@ const products = [
     id: 1,
     title: "Premium Mattresses",
     description: "High-quality foam and spring mattresses for ultimate comfort and support. From wedding foams to orthopedic support, we have the perfect mattress for every need.",
-    image: "/src/assets/images/Araamco Wedding foam.webp",
+    image: "/images/Araamco Wedding foam.webp",
     features: ["Multiple brands", "Orthopedic support", "Wedding specials", "Premium quality"]
   },
   {
     id: 2,
     title: "Elegant Curtains & Drapes",
     description: "Beautiful curtain sets in various designs, colors, and fabrics. From classic to contemporary styles, transform your space with our premium curtains.",
-    image: "/src/assets/images/PARDA1.jpg",
+    image: "/images/PARDA1.jpg",
     features: ["Modern designs", "Premium fabrics", "Custom sizes", "Various styles"]
   },
   {
     id: 3,
     title: "Specialty Foam Products",
     description: "Specialized foam products including CEAT, Muller, and Stressless brands. Engineered for specific comfort needs and long-lasting durability.",
-    image: "/src/assets/images/Spine-Guard foam.webp",
+    image: "/images/Spine-Guard foam.webp",
     features: ["Brand variety", "Specialized support", "Durable materials", "Health-focused"]
   },
   {
     id: 4,
     title: "Luxury Curtain Collections",
     description: "Exclusive curtain collections with intricate designs and premium finishes. Perfect for those who demand the finest quality and style.",
-    image: "/src/assets/images/PARDA9.jpg",
+    image: "/images/PARDA9.jpg",
     features: ["Luxury designs", "Premium finish", "Exclusive collections", "Statement pieces"]
   }
 ];
