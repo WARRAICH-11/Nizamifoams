@@ -7,7 +7,7 @@ const products = [
     id: 1,
     title: "Premium Mattresses",
     description: "High-quality foam and spring mattresses for ultimate comfort and support. From wedding foams to orthopedic support, we have the perfect mattress for every need.",
-    image: "/images/Araamco Wedding foam.webp",
+    image: "/images/Araamco-Wedding-foam.webp",
     features: ["Multiple brands", "Orthopedic support", "Wedding specials", "Premium quality"]
   },
   {
@@ -21,7 +21,7 @@ const products = [
     id: 3,
     title: "Specialty Foam Products",
     description: "Specialized foam products including CEAT, Muller, and Stressless brands. Engineered for specific comfort needs and long-lasting durability.",
-    image: "/images/Spine-Guard foam.webp",
+    image: "/images/Spine-Guard-foam.webp",
     features: ["Brand variety", "Specialized support", "Durable materials", "Health-focused"]
   },
   {

@@ -105,7 +105,7 @@ export default function About() {
           >
             <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-2xl">
               <img
-                src="/images/shop front.png"
+                src="/images/shop-front.png"
                 alt="Nizami Parda & Foam Center storefront"
                 className="w-full h-80 object-cover rounded-2xl"
               />
