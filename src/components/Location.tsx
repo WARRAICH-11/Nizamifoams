@@ -7,27 +7,33 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Visit Our Store",
+    title: "Main Branch - Gujrat",
     details: ["Nizami Parda & Foam Center", "Railway Road", "Gujrat, Punjab, Pakistan"],
     color: "from-blue-500 to-cyan-500"
+  },
+  {
+    icon: MapPin,
+    title: "Second Branch - Kharian",
+    details: ["Nizami Parda & Foam Center", "Gulliyana Road", "Kharian, Punjab, Pakistan", "32°48'37.1\"N 73°52'09.8\"E"],
+    color: "from-green-500 to-emerald-500"
   },
   {
     icon: Phone,
     title: "Call Us",
     details: ["0333-4331036"],
-    color: "from-green-500 to-emerald-500"
+    color: "from-purple-500 to-violet-500"
   },
   {
     icon: Mail,
     title: "Email Us",
     details: ["nizamifoam@gmail.com", "Quick Response Guaranteed"],
-    color: "from-purple-500 to-violet-500"
+    color: "from-orange-500 to-red-500"
   },
   {
     icon: Clock,
     title: "Business Hours",
     details: ["Mon - Sun: 9:00 AM - 8:00 PM", "Friday: Closed"],
-    color: "from-orange-500 to-red-500"
+    color: "from-pink-500 to-rose-500"
   }
 ];
 
@@ -121,14 +127,14 @@ export default function Location() {
             Visit Our Store
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Located in the heart of the business district, our showroom displays our complete range of products. 
-            Come visit us for personalized consultation and to experience our quality firsthand.
+            We have two convenient locations to serve you better. Our showrooms display our complete range of products. 
+            Visit either of our branches for personalized consultation and to experience our quality firsthand.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
             {contactInfo.map((info, index) => (
               <ContactCard key={info.title} info={info} index={index} />
             ))}
@@ -175,7 +181,7 @@ export default function Location() {
                 {/* Store name overlay */}
                 <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/40">
                   <p className="text-sm text-gray-800">Nizami Parda & Foam Center</p>
-                  <p className="text-xs text-gray-600">Araamco Foam Center</p>
+                  <p className="text-xs text-gray-600">Two Locations: Gujrat & Kharian</p>
                 </div>
               </div>
               

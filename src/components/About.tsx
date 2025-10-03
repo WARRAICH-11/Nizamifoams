@@ -71,10 +71,10 @@ export default function About() {
               About Nizami Parda & Foam Center
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              With over 15 years of experience in the home furnishing industry, Nizami Parda & Foam Center has established itself as a trusted name for quality and excellence. We specialize in providing premium curtains, high-grade foam products, elegant sofa covers, and protective solutions for your home.
+              With over 15 years of experience in the home furnishing industry, Nizami Parda & Foam Center has established itself as a trusted name for quality and excellence. We operate from two convenient locations - our main branch in Gujrat and our second branch in Kharian - to better serve our customers across the region.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              Our commitment to quality and customer satisfaction has made us the preferred choice for thousands of satisfied customers. We source our materials from reputable manufacturers and ensure that every product meets our stringent quality standards.
+              We specialize in providing premium curtains, high-grade foam products, elegant sofa covers, and protective solutions for your home. Our commitment to quality and customer satisfaction has made us the preferred choice for thousands of satisfied customers. We source our materials from reputable manufacturers and ensure that every product meets our stringent quality standards.
             </p>
             
             <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-6 border border-white/30 shadow-lg">
@@ -96,37 +96,75 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Image */}
-          <motion.div
+         {/* Branch Images */}
+         <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative flex flex-col sm:flex-row gap-6"
           >
-            <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-2xl">
-              <img
-                src={`${import.meta.env.BASE_URL}images/shop-front.png`}
-                alt="Nizami Parda & Foam Center storefront"
-                className="w-full h-80 object-cover rounded-2xl"
-              />
+            {/* Main Branch - Gujrat */}
+            <div className="relative flex-1">
+              <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 border border-white/20 shadow-2xl inline-block">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/shop-front.png`}
+                  alt="Nizami Parda & Foam Center - Main Branch Gujrat"
+                  className="w-full h-auto object-cover rounded-2xl"
+                />
+                <div className="mt-4 text-center">
+                  <h4 className="text-lg font-bold text-gray-800">Main Branch - Gujrat</h4>
+                  <p className="text-sm text-gray-600">Railway Road, Gujrat, Punjab</p>
+                </div>
+              </div>
+              
+              {/* Floating badge for main branch */}
+              <motion.div
+                animate={{
+                  y: [-10, 10, -10],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full backdrop-blur-lg border border-white/30 shadow-lg text-xs sm:text-sm whitespace-nowrap"
+              >
+                Trusted Since 2007
+              </motion.div>
             </div>
-            
-            {/* Floating badge */}
-            <motion.div
-              animate={{
-                y: [-10, 10, -10],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full backdrop-blur-lg border border-white/30 shadow-lg"
-            >
-              Trusted Since 2009
-            </motion.div>
+
+            {/* Second Branch - Kharian */}
+            <div className="relative flex-1">
+              <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-6 border border-white/30 shadow-2xl inline-block">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/shopfrontkharian.jpg`}
+                  alt="Nizami Parda & Foam Center - Second Branch Kharian"
+                  className="w-full h-auto object-cover rounded-2xl"
+                />
+                <div className="mt-4 text-center">
+                  <h4 className="text-lg font-bold text-gray-800">Second Branch - Kharian</h4>
+                  <p className="text-sm text-gray-600">Gulliyana Road, Kharian, Punjab</p>
+                </div>
+              </div>
+              
+              {/* Floating badge for second branch */}
+              <motion.div
+                animate={{
+                  y: [10, -10, 10],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 2
+                }}
+                className="absolute -top-4 -right-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-full backdrop-blur-lg border border-white/30 shadow-lg text-xs sm:text-sm whitespace-nowrap"
+              >
+                Trusted Since 2007
+              </motion.div>
+            </div>
           </motion.div>
-        </div>
+                  </div>
 
         {/* Stats Section */}
         <motion.div

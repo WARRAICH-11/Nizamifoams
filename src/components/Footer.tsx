@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 
-import React from 'react';
 
 export default function Footer() {
   return (
@@ -129,13 +128,19 @@ export default function Footer() {
                   <p className="text-sm">Gujrat, Punjab, Pakistan</p>
                 </div>
               </div>
+              <div className="flex items-start text-gray-300">
+                <MapPin className="w-5 h-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm">Nizami Parda & Foam Center</p>
+                  <p className="text-sm">Gulliyana raod</p>
+                  <p className="text-sm">Kharian, Punjab, Pakistan</p>
+                </div>
+              </div>
               
               <div className="flex items-center text-gray-300">
                 <Phone className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                 <div>
-                  <p className="text-sm cursor-pointer hover:text-green-400" onClick={() => window.open('tel:+923334331036')}>0333-4331036</p>
-                  <p className="text-sm cursor-pointer hover:text-green-400" onClick={() => window.open('tel:+923167147927')}>0316-7147927</p>
-                </div>
+                  <p className="text-sm cursor-pointer hover:text-green-400" onClick={() => window.open('tel:+923334331036')}>0333-4331036</p>                </div>
               </div>
               
               <div className="flex items-center text-gray-300">
