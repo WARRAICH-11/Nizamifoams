@@ -8,9 +8,9 @@ const foamProducts = [
     id: 1,
     name: "Araamco Wedding Foam",
     description: "Premium quality wedding foam mattress designed for ultimate comfort and durability. Perfect for newlyweds and special occasions.",
-    image: `${import.meta.env.BASE_URL}images/Araamco-Wedding-foam.webp`,
+    image: "/images/Araamco-Wedding-foam.webp",
     features: ["Premium Quality", "Wedding Special", "Long Lasting"],
-    price: "₨ 43,000",
+    price: "From ₨ 18,000",
     category: "Mattresses",
     rating: 4.8
   },
@@ -18,9 +18,9 @@ const foamProducts = [
     id: 2,
     name: "CEAT 2-in-1 Foam",
     description: "Versatile 2-in-1 foam mattress that adapts to your sleeping preferences. Dual comfort zones for personalized support.",
-    image: `${import.meta.env.BASE_URL}images/Ceat-2-in-1-foam.webp`,
+    image: "/images/Ceat-2-in-1-foam.webp",
     features: ["2-in-1 Design", "Adaptive Comfort", "Premium Brand"],
-    price: "₨ 25,000",
+    price: "From ₨ 22,000",
     category: "Mattresses",
     rating: 4.7
   },
@@ -28,9 +28,9 @@ const foamProducts = [
     id: 3,
     name: "Coach Spring Mattress",
     description: "High-quality spring mattress with superior support and comfort. Engineered for optimal spinal alignment and restful sleep.",
-    image: `${import.meta.env.BASE_URL}images/Coach-spring-mattress.webp`,
+    image: "/images/Coach-spring-mattress.webp",
     features: ["Spring Support", "Spinal Alignment", "Breathable"],
-    price: "₨ 38,000",
+    price: "From ₨ 25,000",
     category: "Mattresses",
     rating: 4.9
   },
@@ -38,9 +38,9 @@ const foamProducts = [
     id: 4,
     name: "Repose Spring Mattress",
     description: "Luxury spring mattress designed for deep, restorative sleep. Features advanced spring technology for maximum comfort.",
-    image: `${import.meta.env.BASE_URL}images/Repose-spring-mattress.webp`,
+    image: "/images/Repose-spring-mattress.webp",
     features: ["Luxury Design", "Advanced Springs", "Restorative Sleep"],
-    price: "₨ 29,000",
+    price: "From ₨ 28,000",
     category: "Mattresses",
     rating: 4.8
   },
@@ -48,9 +48,9 @@ const foamProducts = [
     id: 5,
     name: "Spine-Guard Foam",
     description: "Orthopedic foam mattress specifically designed for spine health. Provides targeted support for back pain relief.",
-    image: `${import.meta.env.BASE_URL}images/Spine-Guard-foam.webp`,
+    image: "/images/Spine-Guard-foam.webp",
     features: ["Orthopedic Support", "Spine Health", "Pain Relief"],
-    price: "₨ 75,000",
+    price: "From ₨ 20,000",
     category: "Mattresses",
     rating: 4.9
   },
@@ -58,9 +58,9 @@ const foamProducts = [
     id: 6,
     name: "Stressless Foam",
     description: "Anti-stress foam mattress that helps reduce tension and promotes relaxation. Perfect for stress relief and better sleep.",
-    image: `${import.meta.env.BASE_URL}images/Stresslessfoam.webp`,
+    image: "/images/Stresslessfoam.webp",
     features: ["Anti-Stress", "Tension Relief", "Relaxation"],
-    price: "₨ 42,000",
+    price: "From ₨ 19,000",
     category: "Mattresses",
     rating: 4.7
   },
@@ -68,9 +68,9 @@ const foamProducts = [
     id: 7,
     name: "Muller Foam",
     description: "High-density Muller foam mattress with excellent durability and comfort. German engineering for superior quality.",
-    image: `${import.meta.env.BASE_URL}images/Muller foam.webp`,
+    image: "/images/Muller foam.webp",
     features: ["High Density", "German Quality", "Durable"],
-    price: "₨ 29,000",
+    price: "From ₨ 24,000",
     category: "Mattresses",
     rating: 4.8
   },
@@ -78,9 +78,9 @@ const foamProducts = [
     id: 8,
     name: "Coach Foam",
     description: "Premium coach foam mattress with luxurious comfort and support. Designed for those who appreciate quality sleep.",
-    image: `${import.meta.env.BASE_URL}images/coach-foam.webp`,
+    image: "/images/coach-foam.webp",
     features: ["Luxury Comfort", "Premium Quality", "Quality Sleep"],
-    price: "₨ 38,000",
+    price: "From ₨ 26,000",
     category: "Mattresses",
     rating: 4.9
   },
@@ -89,7 +89,7 @@ const foamProducts = [
     id: 9,
     name: "Elegant Curtain Set 1",
     description: "Beautiful curtain set with modern design and premium fabric. Perfect for living rooms and bedrooms.",
-    image: `${import.meta.env.BASE_URL}images/PARDA1.jpg`,
+    image: "/images/PARDA1.jpg",
     features: ["Modern Design", "Premium Fabric", "Living Room"],
     price: "From ₨ 8,000",
     category: "Curtains",
@@ -99,7 +99,7 @@ const foamProducts = [
     id: 10,
     name: "Luxury Curtain Set 2",
     description: "Luxurious curtain set with elegant patterns and rich colors. Adds sophistication to any room.",
-    image: `${import.meta.env.BASE_URL}images/PARDA2.jpg`,
+    image: "/images/PARDA2.jpg",
     features: ["Luxury Design", "Rich Colors", "Sophisticated"],
     price: "From ₨ 9,500",
     category: "Curtains",
@@ -109,7 +109,7 @@ const foamProducts = [
     id: 11,
     name: "Classic Curtain Set 3",
     description: "Classic curtain design with timeless appeal. Versatile style that complements any interior decor.",
-    image: `${import.meta.env.BASE_URL}images/PARDA3.jpg`,
+    image: "/images/PARDA3.jpg",
     features: ["Classic Style", "Timeless Appeal", "Versatile"],
     price: "From ₨ 7,500",
     category: "Curtains",
@@ -119,7 +119,7 @@ const foamProducts = [
     id: 12,
     name: "Contemporary Curtain Set 4",
     description: "Contemporary curtain set with clean lines and modern aesthetics. Perfect for contemporary homes.",
-    image: `${import.meta.env.BASE_URL}images/PARDA4.jpg`,
+    image: "/images/PARDA4.jpg",
     features: ["Contemporary", "Clean Lines", "Modern Aesthetics"],
     price: "From ₨ 8,500",
     category: "Curtains",
@@ -129,7 +129,7 @@ const foamProducts = [
     id: 13,
     name: "Premium Curtain Set 5",
     description: "Premium quality curtain set with intricate details and superior craftsmanship. A statement piece for your home.",
-    image: `${import.meta.env.BASE_URL}images/PARDA5.jpg`,
+    image: "/images/PARDA5.jpg",
     features: ["Premium Quality", "Intricate Details", "Statement Piece"],
     price: "From ₨ 10,000",
     category: "Curtains",
@@ -139,7 +139,7 @@ const foamProducts = [
     id: 14,
     name: "Designer Curtain Set 6",
     description: "Designer curtain set with unique patterns and premium materials. Created for discerning customers.",
-    image: `${import.meta.env.BASE_URL}images/PARDA6.jpg`,
+    image: "/images/PARDA6.jpg",
     features: ["Designer", "Unique Patterns", "Premium Materials"],
     price: "From ₨ 11,000",
     category: "Curtains",
@@ -149,7 +149,7 @@ const foamProducts = [
     id: 15,
     name: "Elegant Curtain Set 7",
     description: "Elegant curtain set with sophisticated design and quality fabric. Enhances the beauty of any space.",
-    image: `${import.meta.env.BASE_URL}images/PARDA7.jpg`,
+    image: "/images/PARDA7.jpg",
     features: ["Elegant", "Sophisticated", "Quality Fabric"],
     price: "From ₨ 9,000",
     category: "Curtains",
@@ -159,7 +159,7 @@ const foamProducts = [
     id: 16,
     name: "Modern Curtain Set 8",
     description: "Modern curtain set with contemporary style and functionality. Perfect blend of beauty and practicality.",
-    image: `${import.meta.env.BASE_URL}images/PARDA8.jpg`,
+    image: "/images/PARDA8.jpg",
     features: ["Modern", "Contemporary", "Functional"],
     price: "From ₨ 8,200",
     category: "Curtains",
@@ -169,7 +169,7 @@ const foamProducts = [
     id: 17,
     name: "Luxury Curtain Set 9",
     description: "Luxury curtain set with opulent design and premium finish. For those who demand the finest quality.",
-    image: `${import.meta.env.BASE_URL}images/PARDA9.jpg`,
+    image: "/images/PARDA9.jpg",
     features: ["Luxury", "Opulent Design", "Premium Finish"],
     price: "From ₨ 12,000",
     category: "Curtains",
@@ -179,7 +179,7 @@ const foamProducts = [
     id: 18,
     name: "Stylish Curtain Set 10",
     description: "Stylish curtain set with trendy design and vibrant colors. Adds personality to your living space.",
-    image: `${import.meta.env.BASE_URL}images/PARDA10.jpg`,
+    image: "/images/PARDA10.jpg",
     features: ["Stylish", "Trendy Design", "Vibrant Colors"],
     price: "From ₨ 8,800",
     category: "Curtains",
@@ -189,7 +189,7 @@ const foamProducts = [
     id: 19,
     name: "Premium Curtain Set 11",
     description: "Premium curtain set with exceptional quality and beautiful design. The perfect finishing touch for your home.",
-    image: `${import.meta.env.BASE_URL}images/PARDA11.jpg`,
+    image: "/images/PARDA11.jpg",
     features: ["Premium", "Exceptional Quality", "Beautiful Design"],
     price: "From ₨ 10,500",
     category: "Curtains",
@@ -316,13 +316,9 @@ export default function Gallery() {
 
                 {/* Price and WhatsApp Button */}
                 <div className="flex justify-between items-center pt-4 border-t border-white/20">
-                  {product.category === "Mattresses" ? (
-                    <div className="text-lg font-bold text-blue-600">
-                      {product.price}
-                    </div>
-                  ) : (
-                    <div></div>
-                  )}
+                  <div className="text-lg font-bold text-blue-600">
+                    {product.price}
+                  </div>
                   <button
                     onClick={() => handleWhatsAppContact(product.name)}
                     className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2"

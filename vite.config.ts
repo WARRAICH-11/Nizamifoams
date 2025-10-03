@@ -1,4 +1,10 @@
+interface ImportMetaEnv {
+  readonly BASE_URL: string
+}
 
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
