@@ -10,7 +10,7 @@ interface ImportMeta {
   import path from 'path';
 
   export default defineConfig({
-    base: '/Nizamifoams/',
+    base: '/', // or base: ''
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
