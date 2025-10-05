@@ -16,8 +16,8 @@ const foamProducts = [
   },
   {
     id: 2,
-    name: "CEAT 2-in-1 Foam",
-    description: "Versatile 2-in-1 foam mattress that adapts to your sleeping preferences. Dual comfort zones for personalized support.",
+    name: "CEAT Foam",
+    description: "Versatile foam mattress that adapts to your sleeping preferences. Dual comfort zones for personalized support.",
     image: `${import.meta.env.BASE_URL}images/Ceat-2-in-1-foam.webp`,
     features: ["2-in-1 Design", "Adaptive Comfort", "Premium Brand"],
     price: "₨ 25,000",
@@ -50,7 +50,7 @@ const foamProducts = [
     description: "Orthopedic foam mattress specifically designed for spine health. Provides targeted support for back pain relief.",
     image: `${import.meta.env.BASE_URL}images/Spine-Guard-foam.webp`,
     features: ["Orthopedic Support", "Spine Health", "Pain Relief"],
-    price: "₨ 75,000",
+    price: "₨ 42,000",
     category: "Mattresses",
     rating: 4.9
   },
@@ -76,11 +76,11 @@ const foamProducts = [
   },
   {
     id: 8,
-    name: "Coach Foam",
-    description: "Premium coach foam mattress with luxurious comfort and support. Designed for those who appreciate quality sleep.",
+    name: "Home box spring mattress",
+    description: "Premium 2 in 1Latest technology mattress with luxurious comfort and support. Designed for those who appreciate quality sleep.",
     image: `${import.meta.env.BASE_URL}images/coach-foam.webp`,
     features: ["Luxury Comfort", "Premium Quality", "Quality Sleep"],
-    price: "₨ 38,000",
+    price: "₨ 55,000",
     category: "Mattresses",
     rating: 4.9
   },
