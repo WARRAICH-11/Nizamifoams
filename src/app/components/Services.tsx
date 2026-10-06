@@ -47,7 +47,7 @@ export function Services() {
     <section
       id="services"
       className="relative py-32 overflow-hidden"
-      style={{ background: "#050505" }}
+      style={{ background: "#f2f2f2" }}
     >
       <BlobGlow className="top-0 right-1/4" size={500} opacity={0.055} animate />
 
@@ -63,11 +63,11 @@ export function Services() {
           <ScrollReveal>
             <span
               style={{
-                fontFamily: "Space Grotesk, sans-serif",
-                letterSpacing: "0.2em",
-                fontSize: "10px",
+                fontFamily: "Satoshi, Inter, sans-serif",
+                letterSpacing: "0.12em",
+                fontSize: "11px",
                 textTransform: "uppercase",
-                color: "#10B981",
+                color: "#838282",
                 display: "block",
                 marginBottom: "20px",
               }}
@@ -76,23 +76,23 @@ export function Services() {
             </span>
             <h2
               style={{
-                fontFamily: "Newsreader, Georgia, serif",
+                fontFamily: "Clash Display, Satoshi, sans-serif",
                 fontSize: "clamp(36px, 4.5vw, 60px)",
-                fontWeight: 500,
-                color: "#EBEBEB",
-                letterSpacing: "-0.02em",
-                lineHeight: 1.1,
+                fontWeight: 700,
+                color: "#111111",
+                letterSpacing: "-0.05em",
+                lineHeight: 0.9,
               }}
             >
               What We{" "}
-              <em style={{ color: "#10B981", fontStyle: "italic" }}>Offer</em>
+              <em style={{ color: "#838282", fontStyle: "italic" }}>Offer</em>
             </h2>
             <p
               style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 300,
+                fontFamily: "Satoshi, Inter, sans-serif",
+                fontWeight: 500,
                 fontSize: "16px",
-                color: "rgba(235,235,235,0.38)",
+                color: "rgba(17,17,17,0.62)",
                 maxWidth: "480px",
                 margin: "20px auto 0",
                 lineHeight: 1.7,
@@ -110,28 +110,28 @@ export function Services() {
             const Icon = service.icon;
             return (
               <ScrollReveal key={service.title} delay={i * 0.08}>
-                <SpotlightCard className="h-full group">
+                <SpotlightCard className="h-full group nizami-card">
                   <div className="p-7 flex flex-col gap-5 h-full">
                     {/* Icon */}
                     <div
-                      className="w-12 h-12 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6"
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12"
                       style={{
-                        background: "rgba(16,185,129,0.08)",
-                        border: "1px solid rgba(16,185,129,0.15)",
+                        background: "rgba(17,17,17,0.04)",
+                        border: "1px solid rgba(17,17,17,0.08)",
                       }}
                     >
-                      <Icon size={20} style={{ color: "#10B981" }} />
+                      <Icon size={20} style={{ color: "#111111" }} />
                     </div>
 
                     {/* Title */}
                     <h3
                       style={{
-                        fontFamily: "Newsreader, Georgia, serif",
+                        fontFamily: "Clash Display, Satoshi, sans-serif",
                         fontSize: "20px",
-                        fontWeight: 500,
-                        color: "#EBEBEB",
-                        lineHeight: 1.3,
-                        letterSpacing: "-0.01em",
+                        fontWeight: 700,
+                        color: "#111111",
+                        lineHeight: 1.1,
+                        letterSpacing: "-0.04em",
                       }}
                     >
                       {service.title}
@@ -140,10 +140,10 @@ export function Services() {
                     {/* Description */}
                     <p
                       style={{
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: 300,
+                        fontFamily: "Satoshi, Inter, sans-serif",
+                        fontWeight: 500,
                         fontSize: "14px",
-                        color: "rgba(235,235,235,0.38)",
+                        color: "rgba(17,17,17,0.6)",
                         lineHeight: 1.75,
                         flex: 1,
                       }}
@@ -155,7 +155,7 @@ export function Services() {
                     <div
                       className="h-px"
                       style={{
-                        background: "linear-gradient(to right, rgba(16,185,129,0.3), transparent)",
+                        background: "linear-gradient(to right, rgba(17,17,17,0.28), transparent)",
                       }}
                     />
                   </div>

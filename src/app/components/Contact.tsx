@@ -12,7 +12,7 @@ export function Contact() {
       id="contact"
       ref={ref}
       className="relative py-40 overflow-hidden"
-      style={{ background: "#050505" }}
+      style={{ background: "#f2f2f2" }}
     >
       {/* Strong blob glows for this CTA section */}
       <BlobGlow className="-top-20 left-1/4" size={600} opacity={0.09} animate />
@@ -33,11 +33,11 @@ export function Contact() {
         >
           <span
             style={{
-              fontFamily: "Space Grotesk, sans-serif",
-              letterSpacing: "0.2em",
-              fontSize: "10px",
+              fontFamily: "Satoshi, Inter, sans-serif",
+              letterSpacing: "0.12em",
+              fontSize: "11px",
               textTransform: "uppercase",
-              color: "#10B981",
+              color: "#838282",
               display: "block",
               marginBottom: "28px",
             }}
@@ -55,13 +55,13 @@ export function Contact() {
           <h2
             className="gradient-text-anim"
             style={{
-              fontFamily: "Newsreader, Georgia, serif",
+              fontFamily: "Clash Display, Satoshi, sans-serif",
               fontSize: "clamp(36px, 5vw, 72px)",
-              fontWeight: 500,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.08,
+              fontWeight: 700,
+              letterSpacing: "-0.05em",
+              lineHeight: 0.9,
               marginBottom: "24px",
-              background: "linear-gradient(135deg, #EBEBEB 0%, #10B981 50%, #EBEBEB 100%)",
+              background: "linear-gradient(135deg, #111111 0%, #838282 55%, #111111 100%)",
               backgroundSize: "200% auto",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -79,10 +79,10 @@ export function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           style={{
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 300,
+            fontFamily: "Satoshi, Inter, sans-serif",
+            fontWeight: 500,
             fontSize: "17px",
-            color: "rgba(235,235,235,0.4)",
+            color: "rgba(17,17,17,0.65)",
             lineHeight: 1.75,
             marginBottom: "48px",
           }}
@@ -104,25 +104,23 @@ export function Contact() {
             href="https://wa.me/923334331036"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 rounded-full transition-all duration-300 w-full sm:w-auto justify-center"
+            className="nizami-pill flex items-center gap-3 px-8 py-4 w-full sm:w-auto justify-center transition-all duration-300"
             style={{
-              background: "#10B981",
-              color: "#050505",
-              fontFamily: "Space Grotesk, sans-serif",
+              background: "#111111",
+              color: "#f2f2f2",
+              fontFamily: "Satoshi, Inter, sans-serif",
               fontSize: "12px",
               fontWeight: 700,
               letterSpacing: "0.1em",
               textTransform: "uppercase",
-              boxShadow: "0 0 40px rgba(16,185,129,0.35), 0 0 80px rgba(16,185,129,0.1)",
+              boxShadow: "0 0 22px rgba(17,17,17,0.1)",
               animation: "whatsapp-pulse 2.5s ease-in-out infinite",
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
-              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 60px rgba(16,185,129,0.55), 0 0 120px rgba(16,185,129,0.15)";
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 40px rgba(16,185,129,0.35), 0 0 80px rgba(16,185,129,0.1)";
             }}
           >
             <MessageCircle size={16} />
@@ -134,25 +132,27 @@ export function Contact() {
             href="https://www.facebook.com/p/Nizami-Parda-Foam-Centre-61579372240519/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 rounded-full transition-all duration-300 w-full sm:w-auto justify-center"
+            className="nizami-pill flex items-center gap-3 px-8 py-4 w-full sm:w-auto justify-center transition-all duration-300"
             style={{
               background: "transparent",
-              color: "#EBEBEB",
-              fontFamily: "Space Grotesk, sans-serif",
+              color: "#111111",
+              fontFamily: "Satoshi, Inter, sans-serif",
               fontSize: "12px",
-              fontWeight: 600,
+              fontWeight: 700,
               letterSpacing: "0.1em",
               textTransform: "uppercase",
-              border: "1px solid rgba(235,235,235,0.18)",
+              border: "1px solid rgba(17,17,17,0.18)",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(235,235,235,0.35)";
-              (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)";
+              (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.4)";
+              (e.currentTarget as HTMLElement).style.background = "#111111";
+              (e.currentTarget as HTMLElement).style.color = "#f2f2f2";
               (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(235,235,235,0.18)";
+              (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.18)";
               (e.currentTarget as HTMLElement).style.background = "transparent";
+              (e.currentTarget as HTMLElement).style.color = "#111111";
               (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
             }}
           >
@@ -168,11 +168,11 @@ export function Contact() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.45 }}
           style={{
-            fontFamily: "Space Grotesk, sans-serif",
+            fontFamily: "Satoshi, Inter, sans-serif",
             fontSize: "10px",
             letterSpacing: "0.15em",
             textTransform: "uppercase",
-            color: "rgba(235,235,235,0.2)",
+            color: "rgba(17,17,17,0.5)",
             marginTop: "32px",
           }}
         >

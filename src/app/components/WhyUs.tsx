@@ -28,7 +28,7 @@ export function WhyUs() {
   return (
     <section
       className="relative py-24 overflow-hidden"
-      style={{ background: "#050505" }}
+      style={{ background: "#f2f2f2" }}
     >
       {/* Top divider */}
       <div
@@ -40,11 +40,11 @@ export function WhyUs() {
         <ScrollReveal>
           <span
             style={{
-              fontFamily: "Space Grotesk, sans-serif",
-              letterSpacing: "0.2em",
-              fontSize: "10px",
+              fontFamily: "Satoshi, Inter, sans-serif",
+              letterSpacing: "0.12em",
+              fontSize: "11px",
               textTransform: "uppercase",
-              color: "#10B981",
+              color: "#838282",
               display: "block",
               marginBottom: "48px",
               textAlign: "center",
@@ -62,36 +62,36 @@ export function WhyUs() {
                 <div
                   className="group flex flex-col gap-4 p-6 rounded-3xl transition-all duration-300"
                   style={{
-                    background: "rgba(255,255,255,0.02)",
-                    border: "1px solid rgba(255,255,255,0.07)",
+                    background: "rgba(255,255,255,0.4)",
+                    border: "1px solid rgba(17,17,17,0.08)",
                     backdropFilter: "blur(12px)",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(16,185,129,0.2)";
-                    (e.currentTarget as HTMLElement).style.background = "rgba(16,185,129,0.03)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.14)";
+                    (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.85)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.07)";
-                    (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.02)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.08)";
+                    (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.4)";
                   }}
                 >
                   <div
                     className="w-11 h-11 rounded-2xl flex items-center justify-center transition-transform duration-400 group-hover:scale-110"
                     style={{
-                      background: "rgba(16,185,129,0.07)",
-                      border: "1px solid rgba(16,185,129,0.12)",
+                      background: "rgba(17,17,17,0.04)",
+                      border: "1px solid rgba(17,17,17,0.08)",
                     }}
                   >
-                    <Icon size={18} style={{ color: "#10B981" }} />
+                    <Icon size={18} style={{ color: "#111111" }} />
                   </div>
                   <div>
                     <h3
                       style={{
-                        fontFamily: "Newsreader, Georgia, serif",
+                        fontFamily: "Clash Display, Satoshi, sans-serif",
                         fontSize: "17px",
-                        fontWeight: 500,
-                        color: "#EBEBEB",
-                        lineHeight: 1.3,
+                        fontWeight: 700,
+                        color: "#111111",
+                        lineHeight: 1.1,
                         marginBottom: "8px",
                       }}
                     >
@@ -99,10 +99,10 @@ export function WhyUs() {
                     </h3>
                     <p
                       style={{
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: 300,
+                        fontFamily: "Satoshi, Inter, sans-serif",
+                        fontWeight: 500,
                         fontSize: "13px",
-                        color: "rgba(235,235,235,0.38)",
+                        color: "rgba(17,17,17,0.62)",
                         lineHeight: 1.7,
                       }}
                     >

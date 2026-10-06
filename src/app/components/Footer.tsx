@@ -17,7 +17,7 @@ export function Footer() {
   return (
     <footer
       className="relative"
-      style={{ background: "#050505" }}
+      style={{ background: "#1e1e1e" }}
     >
       {/* Top divider */}
       <div
@@ -30,7 +30,7 @@ export function Footer() {
         className="mx-4 md:mx-8 lg:mx-16 rounded-3xl mb-6"
         style={{
           background: "rgba(255,255,255,0.02)",
-          border: "1px solid rgba(255,255,255,0.07)",
+          border: "1px solid rgba(255,255,255,0.05)",
           backdropFilter: "blur(12px)",
         }}
       >
@@ -48,10 +48,10 @@ export function Footer() {
                 <div className="flex flex-col gap-1">
                   <span
                     style={{
-                      fontFamily: "Newsreader, Georgia, serif",
-                      fontStyle: "italic",
+                      fontFamily: "Clash Display, Satoshi, sans-serif",
+                      fontWeight: 700,
                       fontSize: "18px",
-                      color: "#EBEBEB",
+                      color: "#f6f6f6",
                     }}
                   >
                     Nizami Group
@@ -63,10 +63,10 @@ export function Footer() {
               </div>
               <p
                 style={{
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 300,
+                  fontFamily: "Satoshi, Inter, sans-serif",
+                  fontWeight: 500,
                   fontSize: "13px",
-                  color: "rgba(235,235,235,0.35)",
+                  color: "rgba(246,246,246,0.6)",
                   lineHeight: 1.75,
                   maxWidth: "240px",
                 }}
@@ -84,11 +84,11 @@ export function Footer() {
                 </span>
                 <span
                   style={{
-                    fontFamily: "Space Grotesk, sans-serif",
+                    fontFamily: "Satoshi, Inter, sans-serif",
                     fontSize: "9px",
                     letterSpacing: "0.15em",
                     textTransform: "uppercase",
-                    color: "rgba(16,185,129,0.7)",
+                    color: "rgba(246,246,246,0.7)",
                   }}
                 >
                   Open for inquiries
@@ -100,11 +100,11 @@ export function Footer() {
             <div className="flex flex-col gap-4">
               <span
                 style={{
-                  fontFamily: "Space Grotesk, sans-serif",
+                  fontFamily: "Satoshi, Inter, sans-serif",
                   letterSpacing: "0.18em",
                   fontSize: "9px",
                   textTransform: "uppercase",
-                  color: "rgba(235,235,235,0.3)",
+                  color: "rgba(246,246,246,0.5)",
                   marginBottom: "4px",
                 }}
               >
@@ -116,13 +116,13 @@ export function Footer() {
                   onClick={() => scrollTo(link.id)}
                   className="text-left transition-colors duration-200"
                   style={{
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: 300,
+                    fontFamily: "Satoshi, Inter, sans-serif",
+                    fontWeight: 500,
                     fontSize: "13px",
-                    color: "rgba(235,235,235,0.42)",
+                    color: "rgba(246,246,246,0.6)",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#EBEBEB")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(235,235,235,0.42)")}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f6f6f6")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(246,246,246,0.6)")}
                 >
                   {link.label}
                 </button>

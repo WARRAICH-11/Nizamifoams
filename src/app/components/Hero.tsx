@@ -17,8 +17,8 @@ export function Hero() {
     <section
       id="home"
       ref={ref}
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "#050505", paddingTop: "100px" }}
+      className="editorial-hero relative flex items-center overflow-hidden"
+      style={{ background: "#f2f2f2", paddingTop: "100px" }}
     >
       {/* Background blob glows */}
       <BlobGlow className="top-1/4 -left-40" size={600} opacity={0.07} animate />
@@ -44,25 +44,17 @@ export function Hero() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="flex items-center gap-3"
           >
-            <span
-              className="relative flex h-2 w-2"
-            >
-              <span
-                className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping"
-                style={{ background: "#10B981" }}
-              />
-              <span
-                className="relative inline-flex rounded-full h-2 w-2"
-                style={{ background: "#10B981" }}
-              />
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: "#111111" }} />
+              <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: "#111111" }} />
             </span>
             <span
               style={{
-                fontFamily: "Space Grotesk, sans-serif",
-                letterSpacing: "0.2em",
-                fontSize: "10px",
+                fontFamily: "Satoshi, Inter, sans-serif",
+                letterSpacing: "0.12em",
+                fontSize: "11px",
                 textTransform: "uppercase",
-                color: "rgba(235,235,235,0.5)",
+                color: "#838282",
               }}
             >
               Gujrat · Kharian · Est. 2009
@@ -76,27 +68,23 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
             <h1
+              className="display-stack"
               style={{
-                fontFamily: "Newsreader, Georgia, serif",
-                fontSize: "clamp(48px, 6vw, 88px)",
-                fontWeight: 500,
-                lineHeight: 1.05,
-                color: "#EBEBEB",
-                letterSpacing: "-0.02em",
+                position: "relative",
+                fontFamily: "Clash Display, Satoshi, sans-serif",
+                fontSize: "clamp(90px, 11vw, 180px)",
+                fontWeight: 700,
+                lineHeight: 0.9,
+                letterSpacing: "-0.06em",
+                color: "#111111",
+                margin: 0,
               }}
             >
-              Premium{" "}
-              <em
-                style={{
-                  color: "#10B981",
-                  fontStyle: "italic",
-                }}
-              >
-                Curtains
-              </em>{" "}
-              &amp; Foam —{" "}
-              <br className="hidden md:block" />
-              Delivered to Your Door.
+              <span className="echo-layer layer-1">Premium Curtains</span>
+              <span className="echo-layer layer-2">Premium Curtains</span>
+              <span className="echo-layer layer-3">Premium Curtains</span>
+              <span className="echo-layer layer-4">Premium Curtains</span>
+              <span className="headline-main">Premium Curtains</span>
             </h1>
           </motion.div>
 
@@ -106,11 +94,11 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 300,
+              fontFamily: "Satoshi, Inter, sans-serif",
+              fontWeight: 500,
               fontSize: "17px",
               lineHeight: 1.75,
-              color: "rgba(235,235,235,0.45)",
+              color: "rgba(17,17,17,0.7)",
               maxWidth: "480px",
             }}
           >
@@ -132,48 +120,45 @@ export function Hero() {
               href="https://wa.me/923334331036"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300"
+              className="nizami-pill flex items-center gap-2 px-7 py-3.5 transition-all duration-300"
               style={{
-                background: "#EBEBEB",
-                color: "#050505",
-                fontFamily: "Space Grotesk, sans-serif",
+                background: "#111111",
+                color: "#f2f2f2",
+                fontFamily: "Satoshi, Inter, sans-serif",
                 fontSize: "12px",
-                fontWeight: 600,
+                fontWeight: 700,
                 letterSpacing: "0.12em",
                 textTransform: "uppercase",
-                boxShadow: "0 0 30px rgba(16,185,129,0.25)",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 0 50px rgba(16,185,129,0.45)";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+                (e.currentTarget as HTMLElement).style.transform = "translateY(-2px) scale(1.01)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 0 30px rgba(16,185,129,0.25)";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                (e.currentTarget as HTMLElement).style.transform = "translateY(0) scale(1)";
               }}
             >
               Get a Quote
             </a>
             <button
               onClick={() => scrollTo("services")}
-              className="flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300"
+              className="nizami-pill flex items-center gap-2 px-7 py-3.5 transition-all duration-300"
               style={{
                 background: "transparent",
-                color: "#EBEBEB",
-                fontFamily: "Space Grotesk, sans-serif",
+                color: "#111111",
+                fontFamily: "Satoshi, Inter, sans-serif",
                 fontSize: "12px",
-                fontWeight: 600,
+                fontWeight: 700,
                 letterSpacing: "0.12em",
                 textTransform: "uppercase",
-                border: "1px solid rgba(235,235,235,0.2)",
+                border: "1px solid rgba(17,17,17,0.2)",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(235,235,235,0.4)";
-                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)";
+                (e.currentTarget as HTMLElement).style.background = "#111111";
+                (e.currentTarget as HTMLElement).style.color = "#f2f2f2";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(235,235,235,0.2)";
                 (e.currentTarget as HTMLElement).style.background = "transparent";
+                (e.currentTarget as HTMLElement).style.color = "#111111";
               }}
             >
               Our Services

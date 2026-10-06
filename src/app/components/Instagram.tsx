@@ -34,7 +34,7 @@ export function Instagram() {
   return (
     <section
       className="relative py-32 overflow-hidden"
-      style={{ background: "#050505" }}
+      style={{ background: "#f2f2f2" }}
     >
       {/* Top divider */}
       <div
@@ -47,14 +47,14 @@ export function Instagram() {
         <div className="mb-16 text-center">
           <ScrollReveal>
             <div className="flex items-center justify-center gap-2 mb-5">
-              <InstagramIcon size={12} style={{ color: "#10B981" }} />
+              <InstagramIcon size={12} style={{ color: "#111111" }} />
               <span
                 style={{
-                  fontFamily: "Space Grotesk, sans-serif",
-                  letterSpacing: "0.2em",
-                  fontSize: "10px",
+                  fontFamily: "Satoshi, Inter, sans-serif",
+                  letterSpacing: "0.12em",
+                  fontSize: "11px",
                   textTransform: "uppercase",
-                  color: "rgba(235,235,235,0.4)",
+                  color: "rgba(17,17,17,0.6)",
                 }}
               >
                 Daily Updates · @NizamiParda
@@ -62,24 +62,24 @@ export function Instagram() {
             </div>
             <h2
               style={{
-                fontFamily: "Newsreader, Georgia, serif",
+                fontFamily: "Clash Display, Satoshi, sans-serif",
                 fontSize: "clamp(32px, 4vw, 54px)",
-                fontWeight: 500,
-                color: "#EBEBEB",
-                letterSpacing: "-0.02em",
-                lineHeight: 1.1,
+                fontWeight: 700,
+                color: "#111111",
+                letterSpacing: "-0.05em",
+                lineHeight: 0.9,
                 marginBottom: "16px",
               }}
             >
               Follow Our{" "}
-              <em style={{ color: "#10B981", fontStyle: "italic" }}>Work</em>
+              <em style={{ color: "#838282", fontStyle: "italic" }}>Work</em>
             </h2>
             <p
               style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 300,
+                fontFamily: "Satoshi, Inter, sans-serif",
+                fontWeight: 500,
                 fontSize: "15px",
-                color: "rgba(235,235,235,0.35)",
+                color: "rgba(17,17,17,0.62)",
                 lineHeight: 1.7,
               }}
             >
@@ -124,17 +124,17 @@ export function Instagram() {
           <div
             className="mx-auto max-w-xl rounded-3xl p-5 mb-10 text-center"
             style={{
-              background: "rgba(16,185,129,0.04)",
-              border: "1px dashed rgba(16,185,129,0.2)",
+              background: "rgba(17,17,17,0.02)",
+              border: "1px dashed rgba(17,17,17,0.14)",
             }}
           >
             <p
               style={{
-                fontFamily: "Space Grotesk, sans-serif",
+                fontFamily: "Satoshi, Inter, sans-serif",
                 fontSize: "10px",
                 letterSpacing: "0.12em",
                 textTransform: "uppercase",
-                color: "rgba(16,185,129,0.5)",
+                color: "rgba(17,17,17,0.6)",
                 lineHeight: 1.8,
               }}
             >
@@ -150,27 +150,29 @@ export function Instagram() {
               href="https://www.instagram.com/nizamiparda/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full transition-all duration-300"
+              className="nizami-pill inline-flex items-center gap-2 px-8 py-3.5 transition-all duration-300"
               style={{
-                background: "rgba(255,255,255,0.04)",
-                border: "1px solid rgba(255,255,255,0.12)",
-                color: "#EBEBEB",
-                fontFamily: "Space Grotesk, sans-serif",
+                background: "transparent",
+                border: "1px solid rgba(17,17,17,0.2)",
+                color: "#111111",
+                fontFamily: "Satoshi, Inter, sans-serif",
                 fontSize: "11px",
-                fontWeight: 600,
+                fontWeight: 700,
                 letterSpacing: "0.14em",
                 textTransform: "uppercase",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(16,185,129,0.3)";
-                (e.currentTarget as HTMLElement).style.background = "rgba(16,185,129,0.06)";
+                (e.currentTarget as HTMLElement).style.background = "#111111";
+                (e.currentTarget as HTMLElement).style.borderColor = "#111111";
+                (e.currentTarget as HTMLElement).style.color = "#f2f2f2";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";
-                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.2)";
+                (e.currentTarget as HTMLElement).style.background = "transparent";
+                (e.currentTarget as HTMLElement).style.color = "#111111";
               }}
             >
-              <InstagramIcon size={14} style={{ color: "#10B981" }} />
+              <InstagramIcon size={14} style={{ color: "currentColor" }} />
               Follow on Instagram →
             </a>
           </div>

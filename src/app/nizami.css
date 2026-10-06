@@ -1,6 +1,45 @@
 /* Nizami Group — Global animations and overrides */
 
-/* Blob morphing animation */
+:root {
+  --paper: #f2f2f2;
+  --ink: #111111;
+  --muted: #b6b5b5;
+  --muted-strong: #838282;
+  --line: rgba(17, 17, 17, 0.1);
+  --layer-a: #bfbfbf;
+  --layer-b: #c9c9c9;
+  --layer-c: #d1d1d1;
+  --layer-d: #d9d9d9;
+  --ease: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Satoshi', 'Inter', sans-serif;
+}
+
+.nizami-shell {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+h1, h2, h3, h4, .headline, .display {
+  font-family: 'Clash Display', 'Satoshi', sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+}
+
+p, a, button, span, li {
+  font-family: 'Satoshi', 'Inter', sans-serif;
+}
+
 @keyframes blob-morph {
   0%, 100% {
     border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
@@ -20,7 +59,6 @@
   animation: blob-morph 12s ease-in-out infinite;
 }
 
-/* Gradient text animation for CTA headline */
 @keyframes gradient-shift {
   0% {
     background-position: 0% center;
@@ -33,17 +71,15 @@
   }
 }
 
-/* WhatsApp pulse glow */
 @keyframes whatsapp-pulse {
   0%, 100% {
-    box-shadow: 0 0 40px rgba(16, 185, 129, 0.35), 0 0 80px rgba(16, 185, 129, 0.1);
+    box-shadow: 0 0 18px rgba(17, 17, 17, 0.12), 0 0 38px rgba(17, 17, 17, 0.05);
   }
   50% {
-    box-shadow: 0 0 55px rgba(16, 185, 129, 0.5), 0 0 100px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 0 26px rgba(17, 17, 17, 0.18), 0 0 52px rgba(17, 17, 17, 0.08);
   }
 }
 
-/* Shimmer border animation */
 @keyframes shimmer-rotate {
   from {
     transform: rotate(0deg);
@@ -53,48 +89,39 @@
   }
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Remove default blue outline on focused elements for dark theme */
 *:focus-visible {
-  outline: 2px solid rgba(16, 185, 129, 0.5);
+  outline: 2px solid rgba(17, 17, 17, 0.4);
   outline-offset: 2px;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: var(--paper);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(17, 17, 17, 0.18);
   border-radius: 99px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(17, 17, 17, 0.26);
 }
 
-/* Iframe map dark overlay fix */
 iframe {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-/* Urdu typography & bilingual content */
 .urdu {
   font-family: 'Gulzar', serif;
   direction: rtl;
   text-align: right;
   font-size: 1.1em;
   line-height: 2.2;
-  color: rgba(235, 235, 235, 0.75);
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .urdu-label {
@@ -103,6 +130,66 @@ iframe {
   text-align: right;
   font-size: 0.85em;
   line-height: 2;
-  color: #10B981;
+  color: rgba(17, 17, 17, 0.7);
   letter-spacing: 0;
+}
+
+.editorial-hero {
+  background: var(--paper);
+  min-height: 100vh;
+}
+
+.editorial-hero .display-stack {
+  position: relative;
+  display: inline-block;
+}
+
+.editorial-hero .echo-layer {
+  position: absolute;
+  inset: 0;
+  color: var(--layer-a);
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.editorial-hero .echo-layer.layer-1 { color: var(--layer-a); transform: translate(-0.04em, -0.04em); }
+.editorial-hero .echo-layer.layer-2 { color: var(--layer-b); transform: translate(-0.08em, -0.08em); }
+.editorial-hero .echo-layer.layer-3 { color: var(--layer-c); transform: translate(-0.12em, -0.12em); }
+.editorial-hero .echo-layer.layer-4 { color: var(--layer-d); transform: translate(-0.16em, -0.16em); }
+
+.editorial-hero .headline-main {
+  position: relative;
+  z-index: 1;
+  display: block;
+  color: var(--ink);
+}
+
+.nizami-card {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.7s var(--ease);
+}
+
+.nizami-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.nizami-pill {
+  border: 1px solid rgba(17, 17, 17, 0.8);
+  border-radius: 9999px;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.nizami-pill:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 768px) {
+  .editorial-hero .display-stack {
+    display: block;
+  }
 }

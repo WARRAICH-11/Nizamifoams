@@ -33,11 +33,11 @@ export function Navbar() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
+        className="nizami-header fixed top-0 left-0 right-0 z-50 px-6 py-4"
         style={{
-          background: scrolled ? "rgba(5,5,5,0.85)" : "transparent",
-          backdropFilter: scrolled ? "blur(16px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "none",
+          background: scrolled ? "rgba(242,242,242,0.9)" : "rgba(242,242,242,0.65)",
+          backdropFilter: scrolled ? "blur(12px)" : "none",
+          borderBottom: scrolled ? "1px solid rgba(17,17,17,0.08)" : "none",
           transition: "all 0.5s cubic-bezier(0.16,1,0.3,1)",
         }}
       >
@@ -52,11 +52,11 @@ export function Navbar() {
             />
             <span
               style={{
-                fontFamily: "Newsreader, Georgia, serif",
-                fontStyle: "italic",
+                fontFamily: "Clash Display, Satoshi, sans-serif",
+                fontWeight: 700,
                 fontSize: "20px",
-                color: "#EBEBEB",
-                letterSpacing: "0.02em",
+                color: "#111111",
+                letterSpacing: "-0.04em",
               }}
             >
               Nizami Group
@@ -70,16 +70,16 @@ export function Navbar() {
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
                 style={{
-                  fontFamily: "Space Grotesk, sans-serif",
-                  letterSpacing: "0.2em",
-                  fontSize: "10px",
+                  fontFamily: "Satoshi, Inter, sans-serif",
+                  letterSpacing: "0.12em",
+                  fontSize: "12px",
                   textTransform: "uppercase",
-                  color: "rgba(235,235,235,0.55)",
-                  transition: "color 0.2s",
+                  color: "#b6b5b5",
+                  transition: "color 120ms ease",
                 }}
-                className="hover:text-[#EBEBEB]"
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#EBEBEB")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(235,235,235,0.55)")}
+                className="nav-link hover:text-[#111111]"
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#111111")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#b6b5b5")}
               >
                 {link.label}
               </button>
@@ -92,23 +92,24 @@ export function Navbar() {
               href="https://wa.me/923334331036"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300"
+              className="nizami-pill flex items-center gap-2 px-5 py-2.5 transition-all duration-300"
               style={{
-                background: "#10B981",
-                color: "#050505",
-                fontFamily: "Space Grotesk, sans-serif",
-                letterSpacing: "0.12em",
+                background: "transparent",
+                color: "#111111",
+                fontFamily: "Satoshi, Inter, sans-serif",
+                letterSpacing: "0.08em",
                 fontSize: "11px",
-                fontWeight: 600,
+                fontWeight: 700,
                 textTransform: "uppercase",
-                boxShadow: "0 0 24px rgba(16,185,129,0.35)",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 0 40px rgba(16,185,129,0.55)";
+                (e.currentTarget as HTMLElement).style.background = "#111111";
+                (e.currentTarget as HTMLElement).style.color = "#f2f2f2";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 0 24px rgba(16,185,129,0.35)";
+                (e.currentTarget as HTMLElement).style.background = "transparent";
+                (e.currentTarget as HTMLElement).style.color = "#111111";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
               }}
             >

@@ -12,10 +12,11 @@ import "./nizami.css";
 export default function App() {
   return (
     <div
+      className="nizami-shell"
       style={{
-        background: "#050505",
+        background: "#f2f2f2",
         minHeight: "100vh",
-        color: "#EBEBEB",
+        color: "#111111",
         overflowX: "hidden",
       }}
     >

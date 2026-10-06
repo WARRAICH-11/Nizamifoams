@@ -25,7 +25,7 @@ export function Locations() {
     <section
       id="locations"
       className="relative py-32 overflow-hidden"
-      style={{ background: "#050505" }}
+      style={{ background: "#f2f2f2" }}
     >
       <BlobGlow className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" size={700} opacity={0.05} animate />
 
@@ -41,11 +41,11 @@ export function Locations() {
           <ScrollReveal>
             <span
               style={{
-                fontFamily: "Space Grotesk, sans-serif",
-                letterSpacing: "0.2em",
-                fontSize: "10px",
+                fontFamily: "Satoshi, Inter, sans-serif",
+                letterSpacing: "0.12em",
+                fontSize: "11px",
                 textTransform: "uppercase",
-                color: "#10B981",
+                color: "#838282",
                 display: "block",
                 marginBottom: "20px",
               }}
@@ -54,24 +54,24 @@ export function Locations() {
             </span>
             <h2
               style={{
-                fontFamily: "Newsreader, Georgia, serif",
+                fontFamily: "Clash Display, Satoshi, sans-serif",
                 fontSize: "clamp(32px, 4vw, 54px)",
-                fontWeight: 500,
-                color: "#EBEBEB",
-                letterSpacing: "-0.02em",
-                lineHeight: 1.1,
+                fontWeight: 700,
+                color: "#111111",
+                letterSpacing: "-0.05em",
+                lineHeight: 0.9,
                 marginBottom: "16px",
               }}
             >
               Our{" "}
-              <em style={{ color: "#10B981", fontStyle: "italic" }}>Locations</em>
+              <em style={{ color: "#838282", fontStyle: "italic" }}>Locations</em>
             </h2>
             <p
               style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 300,
+                fontFamily: "Satoshi, Inter, sans-serif",
+                fontWeight: 500,
                 fontSize: "15px",
-                color: "rgba(235,235,235,0.35)",
+                color: "rgba(17,17,17,0.62)",
                 lineHeight: 1.7,
               }}
             >
@@ -132,19 +132,19 @@ export function Locations() {
                       <div
                         className="w-10 h-10 rounded-2xl flex items-center justify-center flex-shrink-0 mt-0.5"
                         style={{
-                          background: "rgba(16,185,129,0.08)",
-                          border: "1px solid rgba(16,185,129,0.15)",
+                          background: "rgba(17,17,17,0.04)",
+                          border: "1px solid rgba(17,17,17,0.08)",
                         }}
                       >
-                        <MapPin size={16} style={{ color: "#10B981" }} />
+                        <MapPin size={16} style={{ color: "#111111" }} />
                       </div>
                       <div>
                         <h3
                           style={{
-                            fontFamily: "Newsreader, Georgia, serif",
+                            fontFamily: "Clash Display, Satoshi, sans-serif",
                             fontSize: "22px",
-                            fontWeight: 500,
-                            color: "#EBEBEB",
+                            fontWeight: 700,
+                            color: "#111111",
                             marginBottom: "6px",
                           }}
                         >
@@ -152,10 +152,10 @@ export function Locations() {
                         </h3>
                         <p
                           style={{
-                            fontFamily: "Inter, sans-serif",
-                            fontWeight: 300,
+                            fontFamily: "Satoshi, Inter, sans-serif",
+                            fontWeight: 500,
                             fontSize: "14px",
-                            color: "rgba(235,235,235,0.45)",
+                            color: "rgba(17,17,17,0.62)",
                             lineHeight: 1.6,
                             marginBottom: "6px",
                           }}
