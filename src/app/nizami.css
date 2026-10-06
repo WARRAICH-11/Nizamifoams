@@ -139,9 +139,18 @@ iframe {
   min-height: 100vh;
 }
 
+.nizami-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .editorial-hero .display-stack {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .editorial-hero .echo-layer {
@@ -151,6 +160,8 @@ iframe {
   pointer-events: none;
   white-space: nowrap;
   user-select: none;
+  opacity: 0.82;
+  filter: blur(0.08px);
 }
 
 .editorial-hero .echo-layer.layer-1 { color: var(--layer-a); transform: translate(-0.04em, -0.04em); }
@@ -163,6 +174,7 @@ iframe {
   z-index: 1;
   display: block;
   color: var(--ink);
+  letter-spacing: -0.06em;
 }
 
 .nizami-card {

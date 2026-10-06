@@ -34,15 +34,15 @@ export function Hero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-6 w-full py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-6xl mx-auto px-6 w-full py-20 flex justify-center">
         {/* Left Column */}
-        <div className="flex flex-col items-start gap-8">
+        <div className="flex flex-col items-center text-center gap-8 max-w-5xl">
           {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="flex items-center gap-3"
+            className="flex items-center justify-center gap-3"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: "#111111" }} />
@@ -66,15 +66,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full"
           >
             <h1
               className="display-stack"
               style={{
                 position: "relative",
                 fontFamily: "Clash Display, Satoshi, sans-serif",
-                fontSize: "clamp(90px, 11vw, 180px)",
+                fontSize: "clamp(92px, 11vw, 180px)",
                 fontWeight: 700,
-                lineHeight: 0.9,
+                lineHeight: 0.82,
                 letterSpacing: "-0.06em",
                 color: "#111111",
                 margin: 0,
@@ -98,8 +99,9 @@ export function Hero() {
               fontWeight: 500,
               fontSize: "17px",
               lineHeight: 1.75,
-              color: "rgba(17,17,17,0.7)",
-              maxWidth: "480px",
+              color: "rgba(17,17,17,0.72)",
+              maxWidth: "620px",
+              textAlign: "center",
             }}
           >
             Supplying quality curtains, foam products, and sofa covers across
@@ -114,7 +116,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap justify-center gap-4"
           >
             <a
               href="https://wa.me/923334331036"

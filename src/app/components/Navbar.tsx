@@ -33,11 +33,12 @@ export function Navbar() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className="nizami-header fixed top-0 left-0 right-0 z-50 px-6 py-4"
+        className="nizami-header fixed top-0 left-0 right-0 z-50 px-6"
         style={{
-          background: scrolled ? "rgba(242,242,242,0.9)" : "rgba(242,242,242,0.65)",
+          background: scrolled ? "rgba(242,242,242,0.92)" : "rgba(242,242,242,0.75)",
           backdropFilter: scrolled ? "blur(12px)" : "none",
           borderBottom: scrolled ? "1px solid rgba(17,17,17,0.08)" : "none",
+          boxShadow: scrolled ? "0 1px 0 rgba(17,17,17,0.04)" : "none",
           transition: "all 0.5s cubic-bezier(0.16,1,0.3,1)",
         }}
       >
@@ -72,14 +73,15 @@ export function Navbar() {
                 style={{
                   fontFamily: "Satoshi, Inter, sans-serif",
                   letterSpacing: "0.12em",
-                  fontSize: "12px",
+                  fontSize: "13px",
+                  fontWeight: 700,
                   textTransform: "uppercase",
-                  color: "#b6b5b5",
-                  transition: "color 120ms ease",
+                  color: "#1d1d1d",
+                  transition: "color 120ms ease, opacity 120ms ease",
                 }}
                 className="nav-link hover:text-[#111111]"
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#111111")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#b6b5b5")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#1d1d1d")}
               >
                 {link.label}
               </button>
@@ -94,13 +96,14 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="nizami-pill flex items-center gap-2 px-5 py-2.5 transition-all duration-300"
               style={{
-                background: "transparent",
-                color: "#111111",
+                background: "#111111",
+                color: "#f2f2f2",
                 fontFamily: "Satoshi, Inter, sans-serif",
                 letterSpacing: "0.08em",
                 fontSize: "11px",
                 fontWeight: 700,
                 textTransform: "uppercase",
+                borderColor: "#111111",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.background = "#111111";
@@ -108,8 +111,8 @@ export function Navbar() {
                 (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "transparent";
-                (e.currentTarget as HTMLElement).style.color = "#111111";
+                (e.currentTarget as HTMLElement).style.background = "#111111";
+                (e.currentTarget as HTMLElement).style.color = "#f2f2f2";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
               }}
             >
